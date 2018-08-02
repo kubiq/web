@@ -103,6 +103,10 @@ class EmailComponent extends HTMLElement {
         shadowRoot.appendChild(copyPasteTemplate.content.cloneNode(true));
     }
 
+    static get observedAttributes() {
+        return ['value', 'service'];
+    }
+
     connectedCallback() {
         let copyButton = this.shadowRoot.querySelector('button');
         let svg = this.shadowRoot.querySelector('svg');
@@ -132,6 +136,21 @@ class EmailComponent extends HTMLElement {
         copyButton.addEventListener('click', copyText);
         span.addEventListener('click', copyText);
 
+    }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+        console.log('Custom square element attributes changed.', name, oldValue, newValue);
+    }
+
+    get service() {
+        return this.getAttribute('service');
+    }
+
+    set service(newValue) {
+
+        console.log('newValue', newValue);
+
+        // this.setAttribute('service', newValue);
     }
 
 }

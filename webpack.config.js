@@ -38,14 +38,14 @@ module.exports = {
     module: {
         rules: [
             // BABEL
-            {
-                test: /\.js$/,
-                loader: 'babel-loader',
-                exclude: /(node_modules)/,
-                options: {
-                    compact: true
-                }
-            },
+            // {
+            //     test: /\.js$/,
+            //     loader: 'babel-loader',
+            //     exclude: /(node_modules)/,
+            //     options: {
+            //         compact: true
+            //     }
+            // },
 
             // STYLES
             {
