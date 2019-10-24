@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "jakubpistek-de0cb": {
+      "hosting": {
+        "web": [
+          "jakubpistek-de0cb"
+        ]
+      }
+    }
+  }
+}
