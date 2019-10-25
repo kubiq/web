@@ -1,7 +1,7 @@
 
 
 
-<article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m mw5 center grow">
+<article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m mw5 center">
   <img [src]="project.img" class="db w-100 br2 br--top" [alt]="project.desc">
   <div class="pa2 ph3-ns pb3-ns">
     <div class="dt w-100 mt1">
@@ -19,6 +19,10 @@
     <ul *ngIf="project.techs">
       <li *ngFor="let t of project.techs">{{t}}</li>
     </ul>
+
+    <p *ngIf="project.web">
+      <a [href]="project.web" class="link underline" target="_blank" referrerpolicy="no-referrer">link</a>
+    </p>
   </div>
 
 </article>

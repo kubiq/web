@@ -2,11 +2,12 @@
 <header class="tc pv4 pv5-ns">
   <img src="http://tachyons.io/img/logo.jpg" class="br3 ba b--black-10 h3 w3" alt="avatar">
   <h1 class="f5 f4-ns fw6 black-70">This is Me</h1>
-  <h2 class="f6 black-70 fw2 ttu tracked">I'm a Frontend Engineer</h2>
+  <h2 class="f6 black-70 fw2 ttu tracked">I'm a Frontend Engineer with overlap in backend</h2>
 </header>
 
 <main>
-  <section>
+
+  <section class="mw9 center ph3-ns">
     <article>
       <ul>
         <li><strong>Angular</strong></li>
@@ -14,14 +15,19 @@
         <li><strong>RxJS</strong></li>
         <li>UnitTesting</li>
         <li>IoT</li>
-        <li></li>
       </ul>
     </article>
   </section>
 
-  <section class="flex flex-wrap">
-    <app-project *ngFor="let p of projects" [project]="p"></app-project>
+
+  <section class="mw9 center ph3-ns">
+    <div class="cf ph2-ns">
+      <div *ngFor="let p of projects" class="fl w-100 w-25-ns pa2">
+        <app-project class="pv4" [project]="p"></app-project>
+      </div>
+    </div>
   </section>
+
 </main>
 
 <footer class="ph3 ph4-ns pv6 bt b--black-10 black-70">

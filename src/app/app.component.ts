@@ -13,13 +13,14 @@ export class AppComponent {
       id: 'ff',
       img: 'assets/projects/ff.png',
       name: 'Insights',
-      desc: 'Shopping market analytics tool',
-      web: '',
+      desc: 'Market analytics tool',
+      web: 'https://insights.jumpshot.com',
       techs: [
         'Angular',
         'TypeScript',
         'Scala',
         'BigData',
+        'D3.js',
         'Docker',
       ],
     }, {
@@ -27,7 +28,7 @@ export class AppComponent {
       img: 'http://placekitten.com/g/600/300',
       name: 'PowerFlow',
       desc: 'Tool for creating and managing company workflows',
-      web: '',
+      web: 'https://powerflow.cz/',
       techs: [
         'Angular',
         'Java',
@@ -40,7 +41,7 @@ export class AppComponent {
       img: 'http://placekitten.com/g/600/300',
       name: 'George',
       desc: 'Migration tool for bank customers to new Internet banking application',
-      web: '',
+      web: 'https://www.csas.cz/en/internet-banking/george',
       techs: [
         'Angular',
         'Java',
