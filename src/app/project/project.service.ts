@@ -5,6 +5,8 @@ export interface IProject {
   img: string;
   name: string;
   desc: string;
+  web: string;
+  techs: string[];
 }
 
 @Injectable({
