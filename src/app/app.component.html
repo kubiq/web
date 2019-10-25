@@ -1,2 +1,32 @@
 
-hola
+<header class="tc pv4 pv5-ns">
+  <img src="http://tachyons.io/img/logo.jpg" class="br3 ba b--black-10 h3 w3" alt="avatar">
+  <h1 class="f5 f4-ns fw6 black-70">This is Me</h1>
+  <h2 class="f6 black-70 fw2 ttu tracked">I'm a Frontend Engineer</h2>
+</header>
+
+
+<main>
+  <section>
+    <article>
+      <ul>
+        <li><strong>JavaScript</strong></li>
+        <li><strong>Angular</strong></li>
+        <li>RxJS</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="flex flex-wrap">
+    <app-project *ngFor="let p of projects" [project]="p"></app-project>
+    <app-project *ngFor="let p of projects" [project]="p"></app-project>
+    <app-project *ngFor="let p of projects" [project]="p"></app-project>
+    <app-project *ngFor="let p of projects" [project]="p"></app-project>
+    <app-project *ngFor="let p of projects" [project]="p"></app-project>
+    <app-project *ngFor="let p of projects" [project]="p"></app-project>
+  </section>
+</main>
+
+<footer class="ph3 ph4-ns pv6 bt b--black-10 black-70">
+  <a href="mailto:mail@jakubpistek.cz" class="link b f3 f2-ns dim black-70 lh-solid">mail@jakubpistek.cz</a>
+</footer>
