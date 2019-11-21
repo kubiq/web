@@ -14,7 +14,7 @@ export class AppComponent {
       id: 'ff',
       img: 'assets/projects/ff.png',
       name: 'Insights',
-      desc: 'Market analytics tool',
+      desc: 'Website Metrics: Traffic Statistics, Analytics & Conversion',
       web: 'https://insights.jumpshot.com',
       techs: [
         'Angular',
@@ -26,7 +26,7 @@ export class AppComponent {
       ],
     }, {
       id: 'pf',
-      img: 'http://placekitten.com/g/600/300',
+      img: 'assets/projects/notix.jpg',
       name: 'PowerFlow',
       desc: 'Tool for creating and managing company workflows',
       web: 'https://powerflow.cz/',
@@ -39,7 +39,7 @@ export class AppComponent {
       ],
     }, {
       id: 'george',
-      img: 'http://placekitten.com/g/600/300',
+      img: 'assets/projects/george.jpg',
       name: 'George',
       desc: 'Migration tool for bank customers to new Internet banking application',
       web: 'https://www.csas.cz/en/internet-banking/george',
@@ -49,11 +49,23 @@ export class AppComponent {
         'PDF generation',
       ],
     }, {
+      id: 'ts',
+      img: 'assets/projects/timesheet.png',
+      name: 'Timesheet',
+      desc: 'Internal tool for tracking time spent working on tasks',
+      web: '',
+      techs: [
+        'Angular',
+        'Material Design',
+        'Node.js',
+        'Excel exports',
+      ],
+    }, {
       id: 'esp',
       img: 'assets/projects/esp.jpg',
       name: 'IoT',
       desc: 'Home Automation and IoT',
-      web: '',
+      web: 'https://github.com/kubiq/esphome',
       techs: [
         'HomeAssistant',
         'Grafana',
@@ -61,6 +73,8 @@ export class AppComponent {
         'MQTT',
         'ESP32',
         'ESP8266',
+        'Lua',
+        'C++'
       ],
     },
   ];
