@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { IProject } from './project/project.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
 
@@ -55,8 +56,11 @@ export class AppComponent {
       web: '',
       techs: [
         'HomeAssistant',
+        'Grafana',
         'ZigBee',
+        'MQTT',
         'ESP32',
+        'ESP8266',
       ],
     },
   ];
