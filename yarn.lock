@@ -9087,6 +9087,11 @@ ts-node@~8.4.1:
     source-map-support "^0.5.6"
     yn "^3.0.0"
 
+ts-option@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/ts-option/-/ts-option-2.1.0.tgz#4832ce7f227695dad36047e64638f41d856574bb"
+  integrity sha512-HbugApipXYOwbAhn3cZ9JLdXvAVBo4iIMdfucgVdluMYVRsw5b3qki/ogGhcSAHA/B1i9dqrgQqjwD4eHveoAg==
+
 tslib@1.10.0, tslib@^1.10.0, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
