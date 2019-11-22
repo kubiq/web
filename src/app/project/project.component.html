@@ -1,8 +1,9 @@
 
 <article class="br3 ba dark-gray b--black-10 w-100 h-100 flex flex-column">
-  <img [src]="project.img" class="w-100 br2 br--top cover-fit h-third" [alt]="project.desc">
+  <img *ngFor="let src of project.img.toArray" [src]="src"
+       class="w-100 br2 br--top cover-fit h-25" [alt]="project.desc">
 
-  <div class="pa4 pa3-ns flex flex-column h-two-thirds">
+  <div class="pa2 pa3-ns flex flex-column h75">
     <div class="flex">
       <div class="w-75 ma0">
         <h2 class="f4 ma0">{{project.name}}</h2>
@@ -17,8 +18,8 @@
       {{project.desc}}
     </p>
 
-    <h5 class="mb1">Stack:</h5>
-    <ul class="list pa0 ma0 lh-copy flex-auto-m" *ngIf="project.techs">
+    <h5 class="mb1 mt0">Stack:</h5>
+    <ul class="pa0 ma0 ml3 lh-copy flex-auto-m" *ngIf="project.techs">
       <li *ngFor="let t of project.techs">{{t}}</li>
     </ul>
   </div>

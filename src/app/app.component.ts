@@ -13,9 +13,9 @@ export class AppComponent {
   projects: IProject[] = [
     {
       id: 'ff',
-      img: 'assets/projects/ff.png',
+      img: option('assets/projects/ff.webp'),
       name: 'Insights',
-      desc: 'Website Metrics: Traffic Statistics, Analytics & Conversion',
+      desc: 'Website Metrics: Traffic Statistics, Analytics & Conversion.',
       web: option('https://insights.jumpshot.com'),
       techs: [
         'Angular',
@@ -27,9 +27,9 @@ export class AppComponent {
       ],
     }, {
       id: 'pf',
-      img: 'assets/projects/notix.jpg',
+      img: option('assets/projects/notix.webp'),
       name: 'PowerFlow',
-      desc: 'Tool for creating and managing company workflows',
+      desc: 'Tool for creating and managing company workflows.',
       web: option('https://powerflow.cz/'),
       techs: [
         'Angular',
@@ -40,9 +40,9 @@ export class AppComponent {
       ],
     }, {
       id: 'george',
-      img: 'assets/projects/george.jpg',
+      img: option('assets/projects/george.webp'),
       name: 'George',
-      desc: 'Migration tool for bank customers to new Internet banking application',
+      desc: 'Migration app for bank customers to a new Internet Banking.',
       web: option('https://www.csas.cz/en/internet-banking/george'),
       techs: [
         'Angular',
@@ -51,21 +51,45 @@ export class AppComponent {
       ],
     }, {
       id: 'ts',
-      img: 'assets/projects/timesheet.png',
+      img: option('assets/projects/timesheet.webp'),
       name: 'Timesheet',
-      desc: 'Internal tool for tracking time spent working on tasks',
+      desc: 'Internal app for tracking time spent working on tasks.',
       web: none,
       techs: [
         'Angular',
         'Material Design',
         'Node.js',
-        'Excel exports',
+        'Excel export',
+      ],
+    }, {
+      id: 'nat',
+      img: none,
+      name: 'Natty',
+      desc: 'Mobile app for tracking employees skill-set.',
+      web: none,
+      techs: [
+        'Angular',
+        'Ionic',
+        'Node.js',
+        'Mongo',
+      ],
+    }, {
+      id: 'edu',
+      img: option('assets/projects/edu.webp'),
+      name: 'WikiSlide',
+      desc: 'Twitter like cards for students to learn and prepare.',
+      web: none,
+      techs: [
+        'Angular',
+        'Ionic',
+        'Node.js',
+        'Mongo',
       ],
     }, {
       id: 'esp',
-      img: 'assets/projects/esp.jpg',
+      img: option('assets/projects/esp.webp'),
       name: 'IoT',
-      desc: 'Home Automation and IoT',
+      desc: 'Home Automation and IoT, making my home smart (:.',
       web: option('https://github.com/kubiq/esphome'),
       techs: [
         'HomeAssistant',
