@@ -33,6 +33,7 @@ export class AppComponent {
       web: option('https://powerflow.cz/'),
       techs: [
         'Angular',
+        'WebComponents',
         'Java',
         'BPMN.io',
         'Camunda',
