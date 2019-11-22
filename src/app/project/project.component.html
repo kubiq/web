@@ -7,9 +7,10 @@
       <div class="w-75 ma0">
         <h2 class="f4 ma0">{{project.name}}</h2>
       </div>
-        <h2 class="f5 w-25 ma0 tr">
-        <a [href]="project.web" class="f5 link blue hover-silver" target="_blank"
-           referrerpolicy="no-referrer">@see</a></h2>
+        <h2 class="f5 w-25 ma0 tr" *ngFor="let url of project.web.toArray">
+          <a [href]="url" class="f5 link blue hover-silver" target="_blank"
+             referrerpolicy="no-referrer">@see</a>
+        </h2>
     </div>
 
     <p class="f5 f6-m lh-copy measure measure-narrow-m mt2 mid-gray">

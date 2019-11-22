@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { none, option } from 'ts-option';
 import { IProject } from './project/project.service';
 
 @Component({
@@ -15,7 +16,7 @@ export class AppComponent {
       img: 'assets/projects/ff.png',
       name: 'Insights',
       desc: 'Website Metrics: Traffic Statistics, Analytics & Conversion',
-      web: 'https://insights.jumpshot.com',
+      web: option('https://insights.jumpshot.com'),
       techs: [
         'Angular',
         'TypeScript',
@@ -29,7 +30,7 @@ export class AppComponent {
       img: 'assets/projects/notix.jpg',
       name: 'PowerFlow',
       desc: 'Tool for creating and managing company workflows',
-      web: 'https://powerflow.cz/',
+      web: option('https://powerflow.cz/'),
       techs: [
         'Angular',
         'Java',
@@ -42,7 +43,7 @@ export class AppComponent {
       img: 'assets/projects/george.jpg',
       name: 'George',
       desc: 'Migration tool for bank customers to new Internet banking application',
-      web: 'https://www.csas.cz/en/internet-banking/george',
+      web: option('https://www.csas.cz/en/internet-banking/george'),
       techs: [
         'Angular',
         'Java',
@@ -53,7 +54,7 @@ export class AppComponent {
       img: 'assets/projects/timesheet.png',
       name: 'Timesheet',
       desc: 'Internal tool for tracking time spent working on tasks',
-      web: '',
+      web: none,
       techs: [
         'Angular',
         'Material Design',
@@ -65,7 +66,7 @@ export class AppComponent {
       img: 'assets/projects/esp.jpg',
       name: 'IoT',
       desc: 'Home Automation and IoT',
-      web: 'https://github.com/kubiq/esphome',
+      web: option('https://github.com/kubiq/esphome'),
       techs: [
         'HomeAssistant',
         'Grafana',
