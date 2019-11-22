@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { IProject } from './project.service';
+import { IProject } from './project.model';
 
 @Component({
   selector: 'app-project',

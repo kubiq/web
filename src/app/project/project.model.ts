@@ -1,4 +1,3 @@
-import { Injectable } from '@angular/core';
 import { Option } from 'ts-option';
 
 export interface IProject {
@@ -8,12 +7,4 @@ export interface IProject {
   desc: string;
   web: Option<string>;
   techs: string[];
-}
-
-@Injectable({
-  providedIn: 'root'
-})
-export class ProjectService {
-
-  constructor() { }
 }

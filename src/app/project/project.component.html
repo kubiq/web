@@ -1,5 +1,6 @@
 
 <article class="br3 ba dark-gray b--black-10 w-100 h-100 flex flex-column">
+
   <img *ngFor="let src of project.img.toArray" [src]="src"
        class="w-100 br2 br--top cover-fit h-25" [alt]="project.desc">
 

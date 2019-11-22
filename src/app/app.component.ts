@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { none, option } from 'ts-option';
-import { IProject } from './project/project.service';
+import { IProject } from './project/project.model';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +13,7 @@ export class AppComponent {
   projects: IProject[] = [
     {
       id: 'ff',
-      img: option('assets/projects/ff.webp'),
+      img: option('assets/projects/ff.jpg'),
       name: 'Insights',
       desc: 'Website Metrics: Traffic Statistics, Analytics & Conversion.',
       web: option('https://insights.jumpshot.com'),
@@ -27,7 +27,7 @@ export class AppComponent {
       ],
     }, {
       id: 'pf',
-      img: option('assets/projects/notix.webp'),
+      img: option('assets/projects/notix.jpg'),
       name: 'PowerFlow',
       desc: 'Tool for creating and managing company workflows.',
       web: option('https://powerflow.cz/'),
@@ -40,7 +40,7 @@ export class AppComponent {
       ],
     }, {
       id: 'george',
-      img: option('assets/projects/george.webp'),
+      img: option('assets/projects/george.jpg'),
       name: 'George',
       desc: 'Migration app for bank customers to a new Internet Banking.',
       web: option('https://www.csas.cz/en/internet-banking/george'),
@@ -51,7 +51,7 @@ export class AppComponent {
       ],
     }, {
       id: 'ts',
-      img: option('assets/projects/timesheet.webp'),
+      img: option('assets/projects/timesheet.jpg'),
       name: 'Timesheet',
       desc: 'Internal app for tracking time spent working on tasks.',
       web: none,
@@ -75,7 +75,7 @@ export class AppComponent {
       ],
     }, {
       id: 'edu',
-      img: option('assets/projects/edu.webp'),
+      img: option('assets/projects/edu.jpg'),
       name: 'WikiSlide',
       desc: 'Twitter like cards for students to learn and prepare.',
       web: none,
@@ -87,7 +87,7 @@ export class AppComponent {
       ],
     }, {
       id: 'esp',
-      img: option('assets/projects/esp.webp'),
+      img: option('assets/projects/esp.jpg'),
       name: 'IoT',
       desc: 'Home Automation and IoT, making my home smart (:.',
       web: option('https://github.com/kubiq/esphome'),
