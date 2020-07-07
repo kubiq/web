@@ -12,6 +12,22 @@ export class AppComponent {
 
   projects: IProject[] = [
     {
+      id: 'fevo',
+      img: option('assets/projects/fevo2.jpg'),
+      name: 'Fevo',
+      desc: 'Social Cart. Agile prototyping, build and deploy fast.',
+      web: option('https://www.fevo.com'),
+      techs: [
+        'Scala',
+        'Akka',
+        'ReactRS',
+        'GraphQL',
+        'AWS',
+        'Terraform',
+        'Kubernetes',
+      ],
+    },
+    {
       id: 'ff',
       img: option('assets/projects/ff.jpg'),
       name: 'Insights',
