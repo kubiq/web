@@ -12,6 +12,23 @@ export class AppComponent {
 
   projects: IProject[] = [
     {
+      id: 'ob',
+      img: option('assets/projects/ob.webp'),
+      name: 'Open-Bean',
+      desc: 'We create internal facing applications for BigData.',
+      web: option('https://www.open-bean.com/'),
+      techs: [
+        'Scala',
+        'Akka',
+        'ZIO',
+        'GraphQL',
+        'AWS',
+        'BigData',
+        'Kubernetes',
+        'Spark',
+      ],
+    },
+    {
       id: 'fevo',
       img: option('assets/projects/fevo2.jpg'),
       name: 'Fevo',
@@ -20,7 +37,7 @@ export class AppComponent {
       techs: [
         'Scala',
         'Akka',
-        'ReactRS',
+        'ReactJS',
         'GraphQL',
         'AWS',
         'Terraform',
