@@ -1,7 +1,7 @@
 
 <article class="br3 ba dark-gray b--black-10 w-100 h-100 flex flex-column">
 
-  <img *ngFor="let src of project.img.toArray" [src]="src"
+  <img *ngFor="let src of project.img" [src]="src"
        class="w-100 br2 br--top cover-fit h-25" [alt]="project.desc">
 
   <div class="pa2 pa3-ns flex flex-column h75">
@@ -9,7 +9,7 @@
       <div class="w-75 ma0">
         <h2 class="f4 ma0">{{project.name}}</h2>
       </div>
-        <h2 class="f5 w-25 ma0 tr" *ngFor="let url of project.web.toArray">
+        <h2 class="f5 w-25 ma0 tr" *ngFor="let url of project.web">
           <a [href]="url" class="f5 link blue hover-silver" target="_blank"
              rel="noreferrer" referrerpolicy="no-referrer">@see</a>
         </h2>

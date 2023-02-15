@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { none, option } from 'ts-option';
 import { IProject } from './project/project.model';
 
 @Component({
@@ -13,10 +12,10 @@ export class AppComponent {
   projects: IProject[] = [
     {
       id: 'ob',
-      img: option('assets/projects/ob.webp'),
+      img: ['assets/projects/ob.webp'],
       name: 'Open-Bean',
       desc: 'We create internal facing applications for BigData.',
-      web: option('https://www.open-bean.com/'),
+      web: ['https://www.open-bean.com/'],
       techs: [
         'Scala',
         'Akka',
@@ -30,10 +29,10 @@ export class AppComponent {
     },
     {
       id: 'fevo',
-      img: option('assets/projects/fevo2.jpg'),
+      img: ['assets/projects/fevo2.jpg'],
       name: 'Fevo',
       desc: 'Social Cart. Agile prototyping, build and deploy fast.',
-      web: option('https://www.fevo.com'),
+      web: ['https://www.fevo.com'],
       techs: [
         'Scala',
         'Akka',
@@ -46,10 +45,10 @@ export class AppComponent {
     },
     {
       id: 'ff',
-      img: option('assets/projects/ff.jpg'),
+      img: ['assets/projects/ff.jpg'],
       name: 'Insights',
       desc: 'Website Metrics: Traffic Statistics, Analytics & Conversion.',
-      web: option('https://insights.jumpshot.com'),
+      web: ['https://insights.jumpshot.com'],
       techs: [
         'Angular',
         'TypeScript',
@@ -60,10 +59,10 @@ export class AppComponent {
       ],
     }, {
       id: 'pf',
-      img: option('assets/projects/notix.jpg'),
+      img: ['assets/projects/notix.jpg'],
       name: 'PowerFlow',
       desc: 'Tool for creating and managing company workflows.',
-      web: option('https://powerflow.cz/'),
+      web: ['https://powerflow.cz/'],
       techs: [
         'Angular',
         'WebComponents',
@@ -74,10 +73,10 @@ export class AppComponent {
       ],
     }, {
       id: 'george',
-      img: option('assets/projects/george.jpg'),
+      img: ['assets/projects/george.jpg'],
       name: 'George',
       desc: 'Migration app for bank customers to a new Internet Banking.',
-      web: option('https://www.csas.cz/en/internet-banking/george'),
+      web: ['https://www.csas.cz/en/internet-banking/george'],
       techs: [
         'Angular',
         'Java',
@@ -85,10 +84,10 @@ export class AppComponent {
       ],
     }, {
       id: 'ts',
-      img: option('assets/projects/timesheet.jpg'),
+      img: ['assets/projects/timesheet.jpg'],
       name: 'Timesheet',
       desc: 'Internal app for tracking time spent working on tasks.',
-      web: none,
+      web: [],
       techs: [
         'Angular',
         'Material Design',
@@ -97,10 +96,10 @@ export class AppComponent {
       ],
     }, {
       id: 'nat',
-      img: none,
+      img: [],
       name: 'Natty',
       desc: 'Mobile app for tracking employees skill-set.',
-      web: none,
+      web: [],
       techs: [
         'Angular',
         'Ionic',
@@ -109,10 +108,10 @@ export class AppComponent {
       ],
     }, {
       id: 'edu',
-      img: option('assets/projects/edu.jpg'),
+      img: ['assets/projects/edu.jpg'],
       name: 'WikiSlide',
       desc: 'Twitter like cards for students to learn and prepare.',
-      web: none,
+      web: [],
       techs: [
         'Angular',
         'Ionic',
@@ -121,10 +120,10 @@ export class AppComponent {
       ],
     }, {
       id: 'esp',
-      img: option('assets/projects/esp.jpg'),
+      img: ['assets/projects/esp.jpg'],
       name: 'IoT',
       desc: 'Home Automation and IoT, making my home smart (:.',
-      web: option('https://github.com/kubiq/esphome'),
+      web: ['https://github.com/kubiq/esphome'],
       techs: [
         'HomeAssistant',
         'Grafana',
