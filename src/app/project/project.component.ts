@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { IProject } from './project.model';
 
 @Component({
@@ -6,9 +6,8 @@ import { IProject } from './project.model';
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
 })
 export class ProjectComponent {
-
-  @Input() project: IProject;
-
+  project = input.required<IProject>();
 }

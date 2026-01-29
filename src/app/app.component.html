@@ -24,9 +24,11 @@
     <h4 class="pl2 mb0">My projects:</h4>
 
     <div class="flex-ns flex-wrap-ns justify-around">
-      <article *ngFor="let p of projects" class="w-100 w-50-m w-33-l mw5 pa2 pa3-ns">
-        <app-project [project]="p"></app-project>
-      </article>
+      @for (p of projects; track p) {
+        <article class="w-100 w-50-m w-33-l mw5 pa2 pa3-ns">
+          <app-project [project]="p"></app-project>
+        </article>
+      }
     </div>
   </section>
 
@@ -48,7 +50,7 @@
 
   <a href="mailto:mail@jakubpistek.cz" rel="noreferrer" class="link near-black dib mh3 tc pb3" title="e-mail">
     <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 4.5v15c0 .85-.65 1.5-1.5 1.5H21V7.387l-9 6.463-9-6.463V21H1.5C.649 21 0 20.35 0 19.5v-15c0-.425.162-.8.431-1.068C.7 3.16 1.076 3 1.5 3H2l10 7.25L22 3h.5c.425 0 .8.162 1.069.432.27.268.431.643.431 1.068z"/></svg>
-    <span class="f6 db">mail@jakubpistek.cz</span>
+    <span class="f6 db">mail&#64;jakubpistek.cz</span>
   </a>
 
 </footer>

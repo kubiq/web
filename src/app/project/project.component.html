@@ -1,28 +1,36 @@
 
 <article class="br3 ba dark-gray b--black-10 w-100 h-100 flex flex-column">
 
-  <img *ngFor="let src of project.img" [src]="src"
-       class="w-100 br2 br--top cover-fit h-25" [alt]="project.desc">
+  @for (src of project().img; track src) {
+    <img [src]="src"
+      class="w-100 br2 br--top cover-fit h-25" [alt]="project().desc">
+  }
 
   <div class="pa2 pa3-ns flex flex-column h75">
     <div class="flex">
       <div class="w-75 ma0">
-        <h2 class="f4 ma0">{{project.name}}</h2>
+        <h2 class="f4 ma0">{{project().name}}</h2>
       </div>
-        <h2 class="f5 w-25 ma0 tr" *ngFor="let url of project.web">
+      @for (url of project().web; track url) {
+        <h2 class="f5 w-25 ma0 tr">
           <a [href]="url" class="f5 link blue hover-silver" target="_blank"
-             rel="noreferrer" referrerpolicy="no-referrer">@see</a>
+          rel="noreferrer" referrerpolicy="no-referrer">&#64;see</a>
         </h2>
+      }
     </div>
 
     <p class="f5 f6-m lh-copy measure measure-narrow-m mt2 mid-gray">
-      {{project.desc}}
+      {{project().desc}}
     </p>
 
     <h5 class="mb1 mt0">Stack:</h5>
-    <ul class="pa0 ma0 ml3 lh-copy flex-auto-m" *ngIf="project.techs">
-      <li *ngFor="let t of project.techs">{{t}}</li>
-    </ul>
+    @if (project().techs) {
+      <ul class="pa0 ma0 ml3 lh-copy flex-auto-m">
+        @for (t of project().techs; track t) {
+          <li>{{t}}</li>
+        }
+      </ul>
+    }
   </div>
 
 </article>
