@@ -61,6 +61,21 @@ export class AppComponent {
       ],
     },
     {
+      id: 'soperak',
+      img: ['assets/projects/soperak.png'],
+      name: 'Soperak',
+      desc: 'Operational leasing platform for vehicle search and filtering.',
+      web: ['https://www.soperak.cz/'],
+      techs: [
+        'React 18',
+        'TypeScript',
+        'Webpack',
+        'AWS',
+        'CloudFront',
+        'Nunjucks',
+      ],
+    },
+    {
       id: 'fevo',
       img: ['assets/projects/fevo2.jpg'],
       name: 'Fevo',
