@@ -1,27 +1,45 @@
-# Web
+# Jakub Pištěk - Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.14.
+Personal portfolio website built with Angular 21, deployed to Firebase Hosting as a PWA.
 
-## Development server
+**Live**: [jakubpistek.cz](https://jakubpistek.cz)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Tech Stack
 
-## Code scaffolding
+- Angular 21 (zoneless, standalone components, signal inputs)
+- TypeScript 5.9
+- SCSS + Tachyons CSS
+- Firebase Hosting
+- GitHub Actions CI/CD
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Development
 
-## Build
+```bash
+npm install        # Install dependencies
+npm start          # Dev server at http://localhost:4200
+npm run build      # Production build
+npm run lint       # ESLint
+npm test           # Unit tests (Karma/Jasmine)
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Deployment
 
-## Running unit tests
+Push to `master` automatically deploys to Firebase via GitHub Actions.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Manual deploy: `npm run deploy`
 
-## Running end-to-end tests
+## Project Structure
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```
+src/
+├── app/
+│   ├── app.component.ts       # Root component with projects data
+│   ├── project/
+│   │   ├── project.component.ts
+│   │   └── project.model.ts   # IProject interface
+├── assets/
+│   ├── icons/                 # PWA icons
+│   └── projects/              # Project screenshots
+├── styles.scss                # Global styles
+└── main.ts                    # Bootstrap with zoneless config
+```
