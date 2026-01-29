@@ -19,7 +19,7 @@ npm install        # Install dependencies
 npm start          # Dev server at http://localhost:4200
 npm run build      # Production build
 npm run lint       # ESLint
-npm test           # Unit tests (Karma/Jasmine)
+npm test           # Unit tests (Vitest)
 ```
 
 ## Deployment
