@@ -1,25 +1,36 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ProjectComponent } from './project.component';
+import { IProject } from './project.model';
 
 describe('ProjectComponent', () => {
-  let component: ProjectComponent;
   let fixture: ComponentFixture<ProjectComponent>;
+  let component: ProjectComponent;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ ProjectComponent ]
-    })
-    .compileComponents();
-  }));
+  const mockProject: IProject = {
+    id: 'test',
+    name: 'Test Project',
+    desc: 'Test description',
+    img: ['test.png'],
+    web: ['https://example.com'],
+    techs: ['Angular', 'TypeScript'],
+  };
 
-  beforeEach(() => {
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [ProjectComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(ProjectComponent);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('project', mockProject);
     fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should have project input', () => {
+    expect(component.project()).toEqual(mockProject);
   });
 });
