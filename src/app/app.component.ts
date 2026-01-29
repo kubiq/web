@@ -14,6 +14,36 @@ export class AppComponent {
 
   projects: IProject[] = [
     {
+      id: 'pmx',
+      img: ['assets/projects/pmx.png'],
+      name: 'ProMarginX',
+      desc: 'Financial services app for quote generation and margin analysis.',
+      web: [],
+      techs: [
+        'Angular 21',
+        'NgRx',
+        'Material',
+        'Tailwind',
+        'Keycloak',
+        'Playwright',
+      ],
+    },
+    {
+      id: 'cnv',
+      img: [],
+      name: 'Chci na Vejšku',
+      desc: 'Educational platform helping students prepare for university admission.',
+      web: ['https://chcinavejsku.cz/'],
+      techs: [
+        'React 19',
+        'Vite',
+        'TanStack',
+        'Tailwind',
+        'i18next',
+        'AI Chat',
+      ],
+    },
+    {
       id: 'ob',
       img: ['assets/projects/ob.webp'],
       name: 'Open-Bean',

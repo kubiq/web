@@ -1,15 +1,15 @@
 /* Modern portfolio styles */
 
 :root {
-  /* Modern color palette - subtle gradients with depth */
-  --primary-gradient-start: #667eea;
-  --primary-gradient-end: #764ba2;
+  /* Blue color palette */
+  --primary-gradient-start: #0ea5e9;
+  --primary-gradient-end: #0369a1;
   --surface-color: rgba(255, 255, 255, 0.95);
-  --surface-glass: rgba(255, 255, 255, 0.75);
-  --text-primary: #1a202c;
-  --text-secondary: #4a5568;
-  --text-muted: #718096;
-  --accent-color: #667eea;
+  --surface-glass: rgba(255, 255, 255, 0.8);
+  --text-primary: #0c4a6e;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --accent-color: #0284c7;
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.15);
