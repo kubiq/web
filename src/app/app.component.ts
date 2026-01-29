@@ -30,7 +30,7 @@ export class AppComponent {
     },
     {
       id: 'cnv',
-      img: [],
+      img: ['assets/projects/cnv.png'],
       name: 'Chci na Vejšku',
       desc: 'Educational platform helping students prepare for university admission.',
       web: ['https://chcinavejsku.cz/'],
