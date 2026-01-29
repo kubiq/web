@@ -96,7 +96,7 @@ export class AppComponent {
       img: ['assets/projects/ff.jpg'],
       name: 'Insights',
       desc: 'Website Metrics: Traffic Statistics, Analytics & Conversion.',
-      web: ['https://insights.jumpshot.com'],
+      web: [],
       techs: [
         'Angular',
         'TypeScript',
