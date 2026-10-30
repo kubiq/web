@@ -14,6 +14,52 @@ export class AppComponent {
 
   projects: IProject[] = [
     {
+      id: 'ngauge',
+      img: ['assets/projects/ngauge.webp'],
+      name: 'N Gauge',
+      desc: 'Round AMOLED gauge for a Hyundai i30 N reading oil temp, boost and tyres over OBD-II, with lap timer and drive logging.',
+      web: ['https://github.com/kubiq/n-gauge'],
+      techs: [
+        'ESP32-S3',
+        'C++',
+        'LVGL',
+        'OBD-II',
+        'KiCad',
+        '3D printing',
+        'React Native',
+      ],
+    },
+    {
+      id: 'uctenkomat',
+      img: ['assets/projects/uctenkomat.webp'],
+      name: 'Účtenkomat',
+      desc: 'Snap a Czech receipt, let a vision LLM read it, and file it as an expense in Fakturoid or iDoklad.',
+      web: ['https://github.com/kubiq/uctenkomat'],
+      techs: [
+        'React Native',
+        'Expo',
+        'Electron',
+        'OpenAI',
+        'Fakturoid API',
+        'TypeScript',
+      ],
+    },
+    {
+      id: 'scamcheck',
+      img: ['assets/projects/scamcheck.webp'],
+      name: 'ScamCheck',
+      desc: 'Classifies SMS, chat and email messages or screenshots as fraud, marketing or regular for employees.',
+      web: [],
+      techs: [
+        'React Native',
+        'Expo',
+        'React 19',
+        'TypeScript',
+        'OCR',
+        'Playwright',
+      ],
+    },
+    {
       id: 'pmx',
       img: ['assets/projects/pmx.png'],
       name: 'ProMarginX',
