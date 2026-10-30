@@ -10,7 +10,6 @@ Personal portfolio website built with Angular 21, deployed to Firebase Hosting a
 - TypeScript 5.9
 - SCSS + Tachyons CSS
 - Firebase Hosting
-- GitHub Actions CI/CD
 
 ## Development
 
@@ -24,9 +23,11 @@ npm test           # Unit tests (Vitest)
 
 ## Deployment
 
-Push to `master` automatically deploys to Firebase via GitHub Actions.
+Deploy manually to Firebase Hosting (requires `npx firebase login` once):
 
-Manual deploy: `npm run deploy`
+```bash
+npm run deploy     # ng build && firebase deploy
+```
 
 ## Project Structure
 
