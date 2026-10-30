@@ -1,4 +1,7 @@
 {
+  "projects": {
+    "default": "jakubpistek-de0cb"
+  },
   "targets": {
     "jakubpistek-de0cb": {
       "hosting": {
